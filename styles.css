@@ -48,7 +48,7 @@ table {
 }
 /*
 ========================================================
-                     main styles
+                     site styles
 ========================================================
 */
 html,*{
@@ -113,6 +113,11 @@ main{
     justify-content: center;
     align-items: center;
 }
+main h1{
+    padding: 10px;
+    text-decoration: underline;
+    color: rgb(83, 83, 83);
+}
 footer{
     grid-area: footer;
     height: 30px;
@@ -126,7 +131,6 @@ div.headerDiv{
     background-size: 30% 30%;
     background-repeat: no-repeat;
     background-position: top left, top center, top right, left center, center center, center right, bottom left, bottom center, bottom right;
-
 }
 div.headerDiv div{
     display:flex;
@@ -138,7 +142,7 @@ div.headerDiv div{
     align-items: center;
     transition-property: background-color;
     transition-delay: 0ms;
-    transition-duration: 200ms;
+    transition-duration: 300ms;
     transition-timing-function: ease-in;
 
 }
@@ -147,7 +151,7 @@ div.headerDiv div:hover{
 }
 div.headerDiv h1{
     font-size: 10vw;
-    background-image: linear-gradient(to right, red, blue, green);
+    background-image: linear-gradient(to right, red,green, blue );
     color: transparent;
     -webkit-background-clip:text;
 }
@@ -164,9 +168,6 @@ a#logo{
 #logo h1{
     opacity: 0;
 }
-.headerDiv:hover{
-    background-image: ;
-}
 #skills ul{
     display: flex;
     flex-wrap: wrap;
@@ -180,7 +181,7 @@ a#logo{
 }
 div.socials{
     widows: 100%;
-    border-bottom: 0px black solid;
+    border-bottom: 2px goldenrod solid;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -191,6 +192,7 @@ div.socials{
     fill:black;
 }
 .git, .twitter, .facebook, .linkedin{
+    margin-bottom:5px ;
     height:40px;
     width:10%;
     transition-property: all;
